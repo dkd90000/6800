@@ -1,0 +1,75 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f4f6fb;
+  color: #1e293b;
+}
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 32px 16px 60px;
+  display: grid;
+  gap: 16px;
+}
+.card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.07);
+}
+.hero h1 { margin: 0; font-size: 28px; }
+.hero p { margin: 8px 0 14px; color: #475569; }
+.progressWrap { background: #dbeafe; height: 10px; border-radius: 999px; overflow: hidden; }
+.progressBar { height: 100%; background: linear-gradient(90deg, #22c55e, #16a34a); transition: width .2s; }
+.stepList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+.stepList li {
+  font-size: 13px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 8px;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  color: #64748b;
+}
+.stepList li.active { border-color: #16a34a; color: #166534; font-weight: 600; }
+.stepList li.done { border-color: #86efac; color: #166534; }
+.formArea h2 { margin: 0 0 12px; display: flex; align-items: center; gap: 6px; }
+label { display: block; font-size: 14px; margin: 10px 0; color: #334155; }
+input, textarea, select {
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  font-size: 14px;
+}
+textarea { min-height: 90px; resize: vertical; }
+.actions { margin-top: 16px; display: flex; gap: 8px; justify-content: flex-end; }
+button {
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-weight: 600;
+  background: #16a34a;
+  color: white;
+  cursor: pointer;
+}
+button:disabled { background: #94a3b8; cursor: not-allowed; }
+.review { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+.review li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+.success { text-align: center; padding: 24px; color: #166534; }
